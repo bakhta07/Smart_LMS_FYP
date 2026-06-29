@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Landing from "./pages/public/Landing";
+import Login from "./pages/public/Login";
 
 import StudentLayout from "./layouts/StudentLayout";
 import FacultyLayout from "./layouts/FacultyLayout";
@@ -52,7 +53,7 @@ path="/"
 element={<Landing />} 
 />
 
-
+<Route path="/login/:role" element={<Login />} />
 
 
 

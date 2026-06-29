@@ -8,7 +8,6 @@ import PortalCard from "../../components/PortalCard";
 
 export default function Landing() {
   const navigate = useNavigate();
-  
 
   return (
     <div className="min-h-screen px-6 py-8">
@@ -52,7 +51,7 @@ export default function Landing() {
             icon={<MenuBookIcon fontSize="large" />}
             title="Student Portal"
             description="Access courses, assignments, grades and announcements."
-            onClick={() => navigate("/student")}
+            onClick={() => navigate("/login/student")}
           />
 
           {/* Faculty Portal */}
@@ -60,7 +59,7 @@ export default function Landing() {
             icon={<SchoolIcon fontSize="large" />}
             title="Faculty Portal"
             description="Manage courses, assignments, attendance and AI grading."
-            onClick={() => navigate("/faculty")}
+            onClick={() => navigate("/login/faculty")}
           />
 
           {/* Admin Portal */}
@@ -68,8 +67,7 @@ export default function Landing() {
             icon={<GroupsIcon fontSize="large" />}
             title="Admin Portal"
             description="Manage users, departments and system settings."
-            onClick={() => navigate("/admin")}
-
+            onClick={() => navigate("/login/admin")}
           />
 
         </div>
